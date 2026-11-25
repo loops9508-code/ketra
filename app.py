@@ -66,18 +66,21 @@ def clear_screen():
     os.system("cls" if IS_WINDOWS else "clear")
 
 def banner():
-    # Simple clean banner - works on all terminals
-    print()
-    print(C.CYAN + C.BOLD + "  ╔══════════════════════════════════════════╗" + C.END)
-    print(C.CYAN + C.BOLD + "  ║                                          ║" + C.END)
-    print(C.CYAN + C.BOLD + "  ║              K E T R A                   ║" + C.END)
-    print(C.CYAN + C.BOLD + "  ║                                          ║" + C.END)
-    print(C.CYAN + C.BOLD + "  ║       Ultra Smooth Media Player          ║" + C.END)
-    print(C.CYAN + C.BOLD + "  ║          by Vedansh Mandloi              ║" + C.END)
-    print(C.CYAN + C.BOLD + "  ║               v" + VERSION + "                     ║" + C.END)
-    print(C.CYAN + C.BOLD + "  ║                                          ║" + C.END)
-    print(C.CYAN + C.BOLD + "  ╚══════════════════════════════════════════╝" + C.END)
-    print()
+    print(f"""{C.CYAN}{C.BOLD}
+╔══════════════════════════════════════════════════════════╗
+║                                                          ║
+║   ██╗  ██╗███████╗████████╗██████╗  █████╗               ║
+║   ██║ ██╔╝██╔════╝╚══██╔══╝██╔══██╗██╔══██╗              ║
+║   █████╔╝ █████╗     ██║   ██████╔╝███████║              ║
+║   ██╔═██╗ ██╔══╝     ██║   ██╔══██╗██╔══██║              ║
+║   ██║  ██╗███████╗   ██║   ██║  ██║██║  ██║              ║
+║   ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝              ║
+║                                                          ║
+║              Ultra Smooth Media Player                   ║
+║               by Vedansh Mandloi                         ║
+║                     v{VERSION}                              ║
+╚══════════════════════════════════════════════════════════╝{C.END}
+""")
 
 def info(msg: str):
     print(C.CYAN + msg + C.END)
